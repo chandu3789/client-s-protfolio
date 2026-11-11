@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <title>Peruri Revanth - Full Stack Developer & AI/ML Specialist</title>
+  <meta name="title" content="Peruri Revanth - Full Stack Developer & AI/ML Specialist">
+  <meta name="description" content="Portfolio of Peruri Revanth - Full Stack Developer, Python & Java Specialist, AI/ML Enthusiast, B.Tech CSE at Parul University.">
+  <meta name="keywords" content="Peruri Revanth, Full Stack Developer, Python, Java, AI, ML, React, Parul University, Portfolio">
+  <meta name="author" content="Peruri Revanth">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+  <!-- Google Fonts: Rubik -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-theme="dark">
+
+  <!-- Header / Navigation -->
+  <header id="header">
+    <nav id="navbar" class="navbar">
+      <div class="container nav-container">
+        <!-- Logo -->
+        <a href="#hero" class="logo">
+          <span>&lt;</span>
+          <span class="logo-name">Peruri Revanth</span>
+          <span>/&gt;</span>
+        </a>
+
+        <!-- Desktop Nav Links -->
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Right Actions: Theme Switcher & Mobile Toggle -->
+        <div class="nav-actions">
+          <button id="switchTheme" class="btn-theme-toggle" aria-label="Toggle dark/light theme" title="Toggle theme">
+            <i class="bi bi-brightness-high-fill" id="themeIcon"></i>
+          </button>
+          
+          <button id="mobileNavToggle" class="mobile-toggle-btn" aria-label="Open navigation menu">
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <div class="drawer-header">
+        <a href="#hero" class="logo">
+          <span>&lt;</span>
+          <span class="logo-name">Peruri Revanth</span>
+          <span>/&gt;</span>
+        </a>
+        <button id="closeDrawerBtn" class="close-drawer-btn" aria-label="Close menu">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+      <ul class="drawer-links">
+        <li><a href="#hero" class="drawer-link"><i class="bi bi-house-door"></i> Home</a></li>
+        <li><a href="#about" class="drawer-link"><i class="bi bi-person"></i> About</a></li>
+        <li><a href="#skills" class="drawer-link"><i class="bi bi-tools"></i> Skills</a></li>
+        <li><a href="#projects" class="drawer-link"><i class="bi bi-code-slash"></i> Projects</a></li>
+        <li><a href="#education" class="drawer-link"><i class="bi bi-mortarboard"></i> Education</a></li>
+        <li><a href="#contact" class="drawer-link"><i class="bi bi-envelope"></i> Contact</a></li>
+      </ul>
+      <div class="drawer-footer">
+        <button class="btn primary-bg-btn w-full resume-modal-trigger">
+          <i class="bi bi-file-earmark-person"></i> View Resume PDF
+        </button>
+      </div>
+    </div>
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero">
+      <div class="container hero-container">
+        <div class="hero-grid">
+          <!-- Hero Portrait (Right on desktop, Top on mobile) -->
+          <div class="hero-portrait-col">
+            <div class="hero-portrait-wrapper">
+              <div class="hero-portrait-ring">
+                <img src="client-photo.jpg" alt="Peruri Revanth" class="hero-portrait-img">
+              </div>
+              <div class="status-badge">
+                <span class="status-pulse-dot"></span>
+                <span>Open for Opportunities</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Content (Left) -->
+          <div class="hero-content">
+            <span class="hero-salutation">Namasté, I'm</span>
+            <h1 class="hero-name"><span>Peruri Revanth</span></h1>
+            
+            <div class="showcase-pill-wrapper">
+              <span class="btn btn-sm btn-showcase">
+                <i class="bi bi-stars"></i> Full Stack Developer &bull; AI/ML Enthusiast
+              </span>
+            </div>
+
+            <p class="hero-tagline">
+              B.Tech Computer Science student at <strong>Parul University</strong> with strong expertise in <strong>Python, Java, SQL, and modern web architectures</strong>. Experienced in developing AI-powered applications, secure RESTful APIs, and scalable software solutions.
+            </p>
+
+            <!-- Social Icons Row -->
+            <div class="social-icons">
+              <a href="https://github.com" target="_blank" rel="noreferrer" class="social-btn github" title="GitHub">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noreferrer" class="social-btn linkedin" title="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="https://leetcode.com" target="_blank" rel="noreferrer" class="social-btn leetcode" title="LeetCode">
+                <i class="bi bi-code-square"></i>
+              </a>
+              <a href="mailto:2303031241006@paruluniversity.ac.in" class="social-btn email" title="Email Revanth">
+                <i class="bi bi-envelope-fill"></i>
+              </a>
+              <a href="tel:+918309280849" class="social-btn phone" title="Call Revanth">
+                <i class="bi bi-telephone-fill"></i>
+              </a>
+            </div>
+
+            <!-- Call to Actions -->
+            <div class="call-to-action">
+              <a href="#contact" class="btn primary-bg-btn">
+                <i class="bi bi-envelope"></i> Contact Me
+              </a>
+              <a href="#projects" class="btn secondary-bg-btn">
+                View Portfolio <i class="bi bi-arrow-up-right-circle"></i>
+              </a>
+              <button class="btn outline-btn resume-modal-trigger">
+                <i class="bi bi-file-earmark-text"></i> Resume
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: THINGS I LOVE / CORE SPECIALIZATIONS -->
+    <section id="things-i-love" class="section-padding">
+      <div class="container">
+        <h6 class="text-center"><span class="btn btn-sm theme-button theme-text">Interests</span></h6>
+        <h2 class="section-heading text-center">Things I Love</h2>
+        <p class="section-subheading text-center muted-text">What drives my passion for technology and engineering</p>
+        
+        <div class="cards-grid-3 pt-4">
+          <!-- Card 1: Full-Stack Web Development -->
+          <div class="feature-card">
+            <div class="circle-container">
+              <div class="circle"><i class="bi bi-code-slash"></i></div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Full Stack Development</h3>
+              <p class="card-text">
+                I enjoy engineering end-to-end web applications. From crafting responsive, accessible user interfaces with React and Next.js to building resilient backend APIs using Python Flask, Node.js, and PostgreSQL. Every line of code reflects my dedication to scalability and clean structure.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2: AI & Machine Learning -->
+          <div class="feature-card">
+            <div class="circle-container">
+              <div class="circle"><i class="bi bi-cpu"></i></div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">AI &amp; Machine Learning</h3>
+              <p class="card-text">
+                Exploring cutting-edge AI technologies is where innovation meets real-world utility. I have developed practical integrations with the Groq AI API for sub-second vulnerability analysis and built NLP pipelines for context-aware content generation and image understanding.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3: Problem Solving & Security -->
+          <div class="feature-card">
+            <div class="circle-container">
+              <div class="circle"><i class="bi bi-shield-check"></i></div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Problem Solving &amp; Security</h3>
+              <p class="card-text">
+                A strong foundation in Data Structures, Algorithms, and Object-Oriented Programming (OOPS) enables me to write optimized code. I pay careful attention to application security, including JWT authentication, role-based access control (RBAC), and clean API design.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: ABOUT ME -->
+    <section id="about" class="section-padding">
+      <div class="container">
+        <h6 class="text-center"><span class="btn btn-sm theme-button theme-text">But who am I?</span></h6>
+        <h2 class="section-heading text-center">About Me</h2>
+        <p class="section-subheading text-center muted-text">My story in a nutshell ;)</p>
+
+        <div class="about-grid pt-4">
+          <div class="about-portrait-col">
+            <div class="about-portrait-card">
+              <img src="client-photo.jpg" class="about-portrait-img" alt="Peruri Revanth Portrait">
+              <div class="about-portrait-overlay">
+                <span class="about-name">Peruri Revanth</span>
+                <span class="about-role">B.Tech CSE &bull; Parul University</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-bio-col">
+            <div class="bio-text">
+              <p>
+                Hey, I'm <strong>Revanth</strong> &mdash; a passionate Computer Science student and software developer from India, currently pursuing my <strong>B.Tech in Computer Science &amp; Engineering at Parul University (2023 - 2027)</strong> in Vadodara, Gujarat.
+              </p>
+              <p>
+                My journey began with a natural curiosity for problem-solving and programming logic. Over time, that curiosity evolved into a dedicated passion for full-stack engineering, robust backend services, and practical artificial intelligence integrations.
+              </p>
+              <p>
+                I have hands-on experience building full-stack platforms such as a <strong>Bug Bounty Vulnerability Management Platform</strong> powered by Next.js, Node.js, Express, PostgreSQL, and Groq AI for automated triage, as well as an <strong>AI and NLP-driven Hashtag and Caption Generator</strong> using Flask and React.
+              </p>
+              <p>
+                I thrive in collaborative team environments, value clean code and transparent communication, and am constantly exploring emerging tools, system architecture patterns, and algorithmic challenges.
+              </p>
+            </div>
+
+            <!-- Quick Specs Row -->
+            <div class="quick-facts-grid">
+              <div class="fact-item">
+                <span class="fact-label">University</span>
+                <span class="fact-value">Parul University (2023 - 2027)</span>
+              </div>
+              <div class="fact-item">
+                <span class="fact-label">Current CGPA</span>
+                <span class="fact-value">6.67 / 10.0</span>
+              </div>
+              <div class="fact-item">
+                <span class="fact-label">Location</span>
+                <span class="fact-value">Vadodara, Gujarat (Open to Relocate)</span>
+              </div>
+              <div class="fact-item">
+                <span class="fact-label">Availability</span>
+                <span class="fact-value text-accent">Open for SDE / AI Internships</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: SKILLS -->
+    <section id="skills" class="section-padding">
+      <div class="container">
+        <h6 class="text-center"><span class="btn btn-sm theme-button theme-text">What do I know?</span></h6>
+        <h2 class="section-heading text-center">Skills</h2>
+        <p class="section-subheading text-center muted-text">Here are some of the technologies that are part of my current stack:</p>
+
+        <div class="skills-grid pt-4">
+          <!-- Python -->
+          <div class="skill-box">
+            <div class="skill-icon-wrapper">
+              <i class="bi bi-filetype-py"></i>
+            </div>
+            <p class="skill-name">Python</p>
+            <span class="skill-sub">Flask &bull; AI/ML</span>
+          </div>
+
+          <!-- Java -->
+          <div class="skill-box">
+            <div class="skill-icon-wrapper">
+              <i class="bi bi-filetype-java"></i>
+            </div>
+            <p class="skill-name">Java</p>
+            <span class="skill-sub">OOPS &bull; DSA</span>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="skill-box">
+            <div class="skill-icon-wrapper">
+              <i class="bi bi-filetype-js"></i>
+            </div>
+            <p class="skill-name">JavaScript</p>
+            <span class="skill-sub">ES6+ &bull; Async</span>
+          </div>
+
+          <!-- SQL -->
+          <div class="skill-box">
+            <div class="skill-icon-wrapper">
+              <i class="bi bi-database-check"></i>
+            </div>
+            <p class="skill-name">SQL</p>
+            <span class="skill-sub">Certified &bull; Queries</span>
+          </div>
+
+          <!-- React.js -->
+          <div class="skill-box">
+            <div class="skill-icon-wrapper">
+              <i class="bi bi-code-square"></i>
+            </div>
+            <p class="skill-name">React.js</p>
+            <span class="skill-sub">Hooks &bull; SPA</span>
+          </div>
+
+          <!-- Next.js -->
+          <div class="skill-box">
+            <div class="skill-icon-wrapper">
+              <i class="bi bi-layers"></i>
+            </div>
+            <p class="skill-name">Next.js</p>
+            <span class="skill-sub">Full Stack Web</span>
+          </div>
+
+          <!-- HTML5 -->
+          <div class="skill-box">
+            <div class="skill-icon-wrapper">
+              <i class="bi bi-filetype-html"></i>
+            </div>
+            <p class="skill-name">HTML5</p>
+            <span class="skill-sub">Semantic Layouts</span>
+          </div>
+
+          <!-- CSS3 -->
+          <div class="skill-box">
+            <div class="skill-icon-wrapper">
+              <i class="bi bi-filetype-css"></i>
+            </div>
+            <p class="skill-name">CSS3</p>
+            <span class="skill-sub">Flex &bull; Grid</span>
+          </div>
+
+          <!-- Flask -->
+          <div class="skill-box">
+            <div class="skill-icon-wrapper">
+              <i class="bi bi-hdd-network"></i>
+            </div>
+            <p class="skill-name">Flask</p>
+            <span class="skill-sub">Python REST APIs</span>
+          </div>
+
+          <!-- Node.js & Express -->
+          <div class="skill-box">
+            <div class="skill-icon-wrapper">
+              <i class="bi bi-server"></i>
+            </div>
+            <p class="skill-name">Node / Express</p>
+            <span class="skill-sub">RESTful Backends</span>
+          </div>
+
+          <!-- PostgreSQL -->
+          <div class="skill-box">
+            <div class="skill-icon-wrapper">
+              <i class="bi bi-database"></i>
+            </div>
+            <p class="skill-name">PostgreSQL</p>
+            <span class="skill-sub">Relational &bull; ACID</span>
+          </div>
+
+          <!-- MongoDB -->
+          <div class="skill-box">
+            <div class="skill-icon-wrapper">
+              <i class="bi bi-cloud-check"></i>
+            </div>
+            <p class="skill-name">MongoDB</p>
+            <span class="skill-sub">NoSQL Documents</span>
+          </div>
+
+          <!-- Groq AI & NLP -->
+          <div class="skill-box">
+            <div class="skill-icon-wrapper">
+              <i class="bi bi-robot"></i>
+            </div>
+            <p class="skill-name">Groq AI &amp; NLP</p>
+            <span class="skill-sub">LPU Inference</span>
+          </div>
+
+          <!-- DSA & OOPS -->
+          <div class="skill-box">
+            <div class="skill-icon-wrapper">
+              <i class="bi bi-diagram-3"></i>
+            </div>
+            <p class="skill-name">DSA &amp; OOPS</p>
+            <span class="skill-sub">Problem Solving</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: PROJECTS -->
+    <section id="projects" class="section-padding">
+      <div class="container">
+        <h6 class="text-center"><span class="btn btn-sm theme-button theme-text">What I've done?</span></h6>
+        <h2 class="section-heading text-center">Projects</h2>
+        <p class="section-subheading text-center muted-text">A showcase of production-ready full-stack and AI applications:</p>
+
+        <div class="projects-grid pt-4">
+          <!-- Project 1: Bug Bounty Platform -->
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon-box">
+                <i class="bi bi-shield-lock-fill"></i>
+              </div>
+              <div class="project-header-info">
+                <h3 class="project-title">Bug Bounty Platform</h3>
+                <p class="project-stacks">Next.js &bull; Node.js &bull; Express &bull; PostgreSQL &bull; Groq AI</p>
+              </div>
+              <div class="project-year-badge">2026</div>
+            </div>
+
+            <div class="project-description-box">
+              <p>
+                Developed a full-stack Bug Bounty Platform enabling organizations and ethical security researchers to manage vulnerability reporting, triaging, and disclosure workflows.
+              </p>
+              <ul class="project-points">
+                <li>Built a responsive frontend using <strong>React / Next.js</strong> with RESTful API architecture powered by <strong>Node.js, Express, and PostgreSQL</strong>.</li>
+                <li>Implemented secure <strong>JWT-based authentication</strong>, role-based access control (RBAC), and <strong>Cloudinary file uploads</strong>.</li>
+                <li>Integrated <strong>Groq AI API</strong> for real-time vulnerability severity prediction and automated report triage analysis, improving decision-making speed.</li>
+              </ul>
+            </div>
+
+            <div class="project-footer">
+              <div class="project-tags">
+                <span>Next.js</span>
+                <span>PostgreSQL</span>
+                <span>Groq AI</span>
+                <span>JWT</span>
+                <span>RBAC</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-sm primary-bg-btn rounded-pill" onclick="simulateTriage()">
+                  <i class="bi bi-play-circle-fill"></i> AI Triage Demo
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Hashtag Generator using AI and NLP -->
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon-box">
+                <i class="bi bi-hash"></i>
+              </div>
+              <div class="project-header-info">
+                <h3 class="project-title">Hashtag Generator using AI &amp; NLP</h3>
+                <p class="project-stacks">React.js &bull; Python Flask &bull; NLP &bull; Image Analysis</p>
+              </div>
+              <div class="project-year-badge">2026</div>
+            </div>
+
+            <div class="project-description-box">
+              <p>
+                Developed an intelligent AI-powered web application that generates context-aware social media captions and optimized hashtags to maximize engagement.
+              </p>
+              <ul class="project-points">
+                <li>Implemented <strong>image analysis and NLP techniques</strong> for semantic content understanding and context-aware hashtag recommendations.</li>
+                <li>Designed a responsive, user-friendly frontend in <strong>React.js</strong> integrated with <strong>Python Flask REST APIs</strong>.</li>
+                <li>Enhanced user engagement metrics through automated viral keyword clustering and optimized tag prediction.</li>
+              </ul>
+            </div>
+
+            <div class="project-footer">
+              <div class="project-tags">
+                <span>Python</span>
+                <span>Flask</span>
+                <span>React.js</span>
+                <span>NLP</span>
+                <span>REST APIs</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-sm secondary-bg-btn rounded-pill" onclick="simulateHashtag()">
+                  <i class="bi bi-magic"></i> Try Generator
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive AI Sandbox Bar -->
+        <div class="interactive-demo-card mt-4" id="demoContainer" style="display: none;">
+          <div class="demo-card-inner">
+            <div class="demo-card-header">
+              <h4 id="demoTitle"><i class="bi bi-cpu"></i> Live Interactive Preview</h4>
+              <button class="btn-close-demo" onclick="closeDemo()">&times;</button>
+            </div>
+            <div id="demoContent" class="demo-card-body">
+              <!-- Content injected via JavaScript -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: EDUCATION & CERTIFICATIONS -->
+    <section id="education" class="section-padding">
+      <div class="container">
+        <h6 class="text-center"><span class="btn btn-sm theme-button theme-text">My Journey</span></h6>
+        <h2 class="section-heading text-center">Education &amp; Certifications</h2>
+        <p class="section-subheading text-center muted-text">Academic achievements and professional certifications:</p>
+
+        <div class="education-grid pt-4">
+          <!-- Education Column -->
+          <div class="edu-column">
+            <h3 class="column-title"><i class="bi bi-mortarboard-fill"></i> Education</h3>
+            
+            <div class="timeline-list">
+              <!-- B.Tech -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2023 &ndash; 2027</span>
+                  <h4 class="timeline-degree">B.Tech &ndash; Computer Science &amp; Engineering</h4>
+                  <p class="timeline-institution">Parul University &bull; Vadodara, Gujarat</p>
+                  <span class="badge-grade">CGPA: 6.67 / 10.0</span>
+                  <p class="timeline-text">
+                    Core subjects include Data Structures, Object-Oriented Programming (Java &amp; Python), Relational Database Management Systems, and Web Engineering.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Intermediate -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">Completed Mar 2023</span>
+                  <h4 class="timeline-degree">Intermediate &ndash; MPC</h4>
+                  <p class="timeline-institution">Vidyavikas Junior College</p>
+                  <span class="badge-grade">Score: 662 / 1000</span>
+                  <p class="timeline-text">
+                    Focused on Mathematics, Physics, and Chemistry, laying a strong foundation in computational and analytical logic.
+                  </p>
+                </div>
+              </div>
+
+              <!-- SSC -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">Completed Jun 2021</span>
+                  <h4 class="timeline-degree">SSC &ndash; Secondary School Certificate</h4>
+                  <p class="timeline-institution">ZPHS High School</p>
+                  <span class="badge-grade">Score: 450 / 600</span>
+                  <p class="timeline-text">
+                    Completed secondary schooling with excellence in mathematics and general sciences.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certifications & Soft Skills Column -->
+          <div class="certs-column">
+            <h3 class="column-title"><i class="bi bi-patch-check-fill"></i> Certifications &amp; Attributes</h3>
+            
+            <div class="certs-list">
+              <div class="cert-item-card">
+                <div class="cert-icon">
+                  <i class="bi bi-award-fill"></i>
+                </div>
+                <div class="cert-details">
+                  <h4 class="cert-title">Artificial Intelligence with Python Internship</h4>
+                  <p class="cert-issuer">Coincent in association with Languify</p>
+                  <p class="cert-summary">
+                    Comprehensive training in Python programming, machine learning workflows, data preprocessing, and AI application design.
+                  </p>
+                </div>
+              </div>
+
+              <div class="cert-item-card">
+                <div class="cert-icon">
+                  <i class="bi bi-database-check"></i>
+                </div>
+                <div class="cert-details">
+                  <h4 class="cert-title">Basic SQL Certification</h4>
+                  <p class="cert-issuer">Relational Database Standardization</p>
+                  <p class="cert-summary">
+                    Certified in SQL syntax, relational table design, complex joins, data aggregation, normalization, and indexing.
+                  </p>
+                </div>
+              </div>
+
+              <div class="soft-skills-card">
+                <h4 class="soft-title"><i class="bi bi-lightbulb-fill"></i> Soft Skills &amp; Strengths</h4>
+                <div class="soft-tags-cloud">
+                  <span>Communication</span>
+                  <span>Teamwork</span>
+                  <span>Problem Solving</span>
+                  <span>Agile Thinking</span>
+                  <span>Quick Learner</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: CONTACT -->
+    <section id="contact" class="section-padding">
+      <div class="container">
+        <h6 class="text-center"><span class="btn btn-sm theme-button theme-text">Let's Connect</span></h6>
+        <h2 class="section-heading text-center">Contact Me</h2>
+        <p class="section-subheading text-center muted-text">Have a role, opportunity, or project to discuss? Feel free to reach out!</p>
+
+        <div class="contact-grid pt-4">
+          <!-- Contact Info Cards -->
+          <div class="contact-info-boxes">
+            <div class="info-card">
+              <div class="info-icon"><i class="bi bi-envelope-at-fill"></i></div>
+              <div class="info-text">
+                <span class="info-label">Official Email</span>
+                <a href="mailto:2303031241006@paruluniversity.ac.in" class="info-val">
+                  2303031241006@paruluniversity.ac.in
+                </a>
+              </div>
+              <button class="btn-copy" onclick="copyText('2303031241006@paruluniversity.ac.in')" title="Copy Email">
+                <i class="bi bi-copy"></i>
+              </button>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon"><i class="bi bi-telephone-fill"></i></div>
+              <div class="info-text">
+                <span class="info-label">Direct Phone / WhatsApp</span>
+                <a href="tel:+918309280849" class="info-val">+91-8309280849</a>
+              </div>
+              <button class="btn-copy" onclick="copyText('+918309280849')" title="Copy Phone">
+                <i class="bi bi-copy"></i>
+              </button>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon"><i class="bi bi-geo-alt-fill"></i></div>
+              <div class="info-text">
+                <span class="info-label">Location</span>
+                <span class="info-val">Vadodara, Gujarat, India</span>
+              </div>
+            </div>
+
+            <div class="social-connect-card">
+              <span class="sc-title">Connect on Professional Networks</span>
+              <div class="sc-buttons">
+                <a href="https://linkedin.com" target="_blank" rel="noreferrer" class="btn btn-sm sc-btn">
+                  <i class="bi bi-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com" target="_blank" rel="noreferrer" class="btn btn-sm sc-btn">
+                  <i class="bi bi-github"></i> GitHub
+                </a>
+                <a href="https://leetcode.com" target="_blank" rel="noreferrer" class="btn btn-sm sc-btn">
+                  <i class="bi bi-code-square"></i> LeetCode
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-wrapper">
+            <form id="contactForm" class="contact-form">
+              <h3 class="form-title">Send a Message</h3>
+              <p class="form-sub">I'll get back to you as soon as possible.</p>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" class="form-control" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Your Email</label>
+                  <input type="email" id="email" class="form-control" placeholder="Enter your email address" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject / Inquiry Type</label>
+                <input type="text" id="subject" class="form-control" placeholder="e.g. SDE Opportunity / Internship / Project" required>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" rows="4" class="form-control" placeholder="Write your message here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn primary-bg-btn w-full">
+                <i class="bi bi-send-fill"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container footer-container">
+      <div class="footer-logo">
+        <span>&lt;</span>
+        <span class="logo-name">Peruri Revanth</span>
+        <span>/&gt;</span>
+      </div>
+      <p class="footer-copy">
+        Crafted with clean design &bull; Parul University CSE 2023 &ndash; 2027
+      </p>
+      <div class="footer-socials">
+        <a href="https://github.com" target="_blank" rel="noreferrer"><i class="bi bi-github"></i></a>
+        <a href="https://linkedin.com" target="_blank" rel="noreferrer"><i class="bi bi-linkedin"></i></a>
+        <a href="https://leetcode.com" target="_blank" rel="noreferrer"><i class="bi bi-code-square"></i></a>
+        <a href="mailto:2303031241006@paruluniversity.ac.in"><i class="bi bi-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- RESUME MODAL -->
+  <div class="modal-backdrop" id="resumeModal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title"><i class="bi bi-file-earmark-person"></i> Peruri Revanth &mdash; Resume</h3>
+        <div class="modal-actions">
+          <button class="btn btn-sm secondary-bg-btn" onclick="window.print()">
+            <i class="bi bi-printer"></i> Print / Save PDF
+          </button>
+          <button class="btn-close-modal" id="closeResumeModal">&times;</button>
+        </div>
+      </div>
+      <div class="modal-body printable-resume">
+        <div class="resume-sheet">
+          <header class="resume-header">
+            <h1 class="r-name">PERURI REVANTH</h1>
+            <p class="r-role">Full Stack Developer &mdash; Python &mdash; Java &mdash; AI/ML Enthusiast</p>
+            <div class="r-contact">
+              <span>+91-8309280849</span> &bull;
+              <span>Vadodara, Gujarat</span> &bull;
+              <span>2303031241006@paruluniversity.ac.in</span>
+            </div>
+            <div class="r-links">
+              <span>GitHub</span> &bull; <span>LinkedIn</span> &bull; <span>LeetCode</span>
+            </div>
+          </header>
+
+          <section class="r-section">
+            <h2 class="r-heading">PROFESSIONAL SUMMARY</h2>
+            <p class="r-text">
+              Results-driven and highly motivated Computer Science Engineering student with strong expertise in Python, Java, SQL, and modern web technologies. Experienced in developing AI-powered and machine learning-based applications with a solid foundation in Data Structures, OOPS, and problem-solving. Passionate about building scalable software solutions, exploring emerging technologies, and continuously enhancing technical and analytical skills in real-world development environments.
+            </p>
+          </section>
+
+          <section class="r-section">
+            <h2 class="r-heading">EDUCATION</h2>
+            <div class="r-item">
+              <div class="r-row">
+                <strong>B.Tech &ndash; Computer Science &amp; Engineering &mdash; Parul University</strong>
+                <span>2023 &ndash; 2027</span>
+              </div>
+              <div class="r-row muted">
+                <span>CGPA: 6.67 / 10.0</span>
+                <span>Vadodara, Gujarat</span>
+              </div>
+            </div>
+            <div class="r-item">
+              <div class="r-row">
+                <strong>Intermediate &ndash; MPC &mdash; Vidyavikas Junior College</strong>
+                <span>Mar 2023</span>
+              </div>
+              <div class="r-row muted">
+                <span>Score: 662 / 1000</span>
+              </div>
+            </div>
+            <div class="r-item">
+              <div class="r-row">
+                <strong>SSC &ndash; ZPHS High School</strong>
+                <span>Jun 2021</span>
+              </div>
+              <div class="r-row muted">
+                <span>Score: 450 / 600</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="r-section">
+            <h2 class="r-heading">TECHNICAL SKILLS</h2>
+            <div class="r-skills-grid">
+              <div><strong>Languages:</strong> Python, Java, SQL, JavaScript</div>
+              <div><strong>Frontend:</strong> HTML, CSS, React.js</div>
+              <div><strong>Backend:</strong> Flask</div>
+              <div><strong>Database:</strong> MongoDB</div>
+              <div><strong>Core CS:</strong> DSA, OOPS</div>
+              <div><strong>Soft Skills:</strong> Communication, Teamwork, Problem Solving</div>
+            </div>
+          </section>
+
+          <section class="r-section">
+            <h2 class="r-heading">PROJECTS</h2>
+            <div class="r-project">
+              <div class="r-row">
+                <strong>Bug Bounty Platform</strong>
+                <span>2026</span>
+              </div>
+              <ul>
+                <li>Developed a full-stack Bug Bounty Platform enabling organizations and security researchers to manage vulnerability reporting and disclosure workflows.</li>
+                <li>Built a responsive frontend using React/Next.js and a scalable backend using Node.js, Express, and PostgreSQL with RESTful API architecture.</li>
+                <li>Implemented secure JWT-based authentication, role-based access control (RBAC), Cloudinary file uploads, and workflow management for vulnerability reports.</li>
+                <li>Integrated Groq AI API for real-time vulnerability severity prediction and automated report analysis, improving triage efficiency and decision-making.</li>
+              </ul>
+            </div>
+            <div class="r-project">
+              <div class="r-row">
+                <strong>Hashtag Generator using AI and NLP</strong>
+                <span>2026</span>
+              </div>
+              <ul>
+                <li>Developed an AI-powered web application to generate captions and hashtags for social media content.</li>
+                <li>Implemented image analysis and NLP techniques for context-aware hashtag recommendations.</li>
+                <li>Designed responsive frontend with React.js and integrated backend APIs using Flask.</li>
+                <li>Enhanced user engagement through automated and optimized hashtag generation.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="r-section">
+            <h2 class="r-heading">CERTIFICATIONS</h2>
+            <ul>
+              <li>Artificial Intelligence with Python Internship &ndash; Coincent in association with Languify</li>
+              <li>Basic SQL Certification</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast"></div>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
